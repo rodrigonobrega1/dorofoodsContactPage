@@ -1,0 +1,25 @@
+*{
+    background-color: #eeeeee;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo{
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo img{
+    background-color: white;
+}
+
+.title-logo{
+    text-align: center;
+    color: #382D24;
+}

@@ -1,0 +1,106 @@
+
+
+details div {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+	padding: .5em;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    max-height: 100px;
+    height: 100px;
+}
+
+details div img {
+    width: 70px;
+    background-color: white;
+}
+
+details div p, strong {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 12px;
+    width: 230px;
+    background-color: white;
+}
+
+details div a {
+    background-color: #7AB800;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+details div > * + * {
+	margin-top: 1.5em;
+}
+
+details + details {
+	margin-top: .5rem;
+}
+
+summary {
+	list-style: none;
+}
+
+summary::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+    border-radius: 20px;
+	padding: .75em 1em;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+
+}
+
+summary:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "";
+	width: 1.2rem;
+	height: 1.2rem;
+	background-color: #382D24;
+    border-radius: 20px;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+details[open] summary {
+	background-image: linear-gradient(to right ,#eeeeee, white);
+    border: 1px solid #b7b7b7;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+details[open] summary:before {
+	content: "";
+    background-color: #382D24;
+    width: 1.2rem;
+	height: .4rem;
+    color: white;
+
+}
+
+summary:hover {
+	background-color: white;
+}
